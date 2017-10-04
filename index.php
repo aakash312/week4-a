@@ -110,32 +110,32 @@
 	{
 	echo "<b> 10.</b> Leap Year <b>(FOREACH LOOP WITH SWITCH CASE)</b>";
 	echo "<br>";
-	foreach ($year as $y )
-	{
-	switch((($y % 4) == 0) && ((($y % 100) != 0) || (($y % 400) == 0)))
-	{
-	case True:
-	echo $y . " -------> Yes, A leap year.";
-	break;
-	default:
-	echo $y . " -------> No,Not a leap year.";
-	}
-	echo "<br>";
-	}
-	echo "<br>";
-	echo "Leap Year <b>(FOR LOOP)</b>";
-	echo "<br>";
-	for($i=0; $i< sizeof($year); $i++){
-	switch((($year[$i] % 4) == 0) && ((($year[$i] % 100) != 0) || (($year[$i] % 400) == 0))){
-	case True:
-	echo $year[$i] . " -------> Yes, A leap year.";
-	break; 
-	default:
-	echo $year[$i] . " -------> No,Not a leap year. ";
-	}
-	echo "<br>";
-	}
-	echo '<hr>';
+	foreach ($year as $y ){
+	 
+	switch((($y % 4) == 0) && ((($y % 100) != 0) || (($y % 400) == 0))){
+	 
+	 case True:
+	 echo  " True";
+	   
+	 break;
+	   
+	 default:
+	 echo  " False";
+	 }
+   	 }
+	 echo "<br>";
+	 echo "Leap Year <b>(FOR LOOP)</b>";
+	 echo "<br>";
+	 for($i=0; $i< sizeof($year); $i++){
+	 switch((($year[$i] % 4) == 0) && ((($year[$i] % 100) != 0) || (($year[$i] % 400) == 0))){
+	 case True:
+	 echo  " True";
+	 break;
+	 default:
+	 echo  " False ";
+	 }
+	 }
+	 echo '<hr>';
 	}
 	}
 	$object= new main();
